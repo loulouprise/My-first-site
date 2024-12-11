@@ -1,61 +1,464 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le web et ses infrastructure</title>
-</head>
-<style>
-    body {
-        background-color: white;
-    }
-    h1 { 
-        color:red
-    }
-    h2 {
-        color: black;
-    }
-#subtitle-1 {
-  background-color: cornflowerblue;
-}
-#subtitle-2 {
-  background-color: cornflowerblue;
-}
-        p{color:rgb(0, 0, 0);
-        }
-</style>
-<body>
-    <h1><center>Le Web et ses infrastructures</center></h1>
-    <h2 id="subtitle-1"><strong>Dans le web, il y a aussi le Cloud, les Bases de données big data, SQL, cookies (aspect informationnel), RGPD...</strong></h2>
-    <h3>Où sont stockées toutes les données du web ?</h3>
-    <p>Les données du web comme les sites, les fichiers et les images sont tous stockés dans des data center aussi appelé base de données avec à l'intérieur des serveurs.<br> 
-        C'est pour cela que nous pouvons voir des problèmes avec les sites quand le data center de Paris nommé Paris Digital Park qui possède plus de 7 hectares de serveurs. <br>
-        Ce que les gens apellent le cloud, c'est en réalité des serveurs qui stockent vos informations.<br> 
-        Par exemple Onedrive est un cloud qui stocke vos informations et vos fichiers dans un serveur qui vous est dédié et qui permet de ne pas perdre vos informations si jamais vous les aviez stocké sur votre appareil. <br>
-    <figure>
-        <img src="https://arcora.com/wp-content/uploads/2022/12/par8.jpg" width="400">
-    <img src="https://cdn.baxtel.com/data-center/digital-realty-to-expand-in-italy/logo/digital-realty-to-expand-in-italy-featured.jpeg" width="400"><br>
-    <figcaption>la photo n°1, nous pouvons voir le Paris Digital Park vu de l'extérieur et sur la n°2, nous pouvons voir le data center de San José de l'intérieur.</figcaption>
-    </figure>
-    <h3>Vous vous demandez peut être quesqu'un serveur ?</h3>
-    <p>Un serveur est le disque qui est connecté a internet. Donc un serveur est dans le data center et ce sont ces fameux serveurs qui vous traduisent du SQL vers le html que votre ordinateur lit comme dans le schéma ci dessous.</p><br>
-    <figure>
-    <img src="https://user.oc-static.com/upload/2020/04/06/15861589159419_REALcompo_comprendre_le_web_revemp-07.png" width="400">
-     <center> <img src="https://www.zonensi.fr/NSI/Premiere/C08/ClientServeur.png" width="400"></center><br>
-    <figcaption> On peut voir sur les 2 shémas le trajet d'une requête sur internet.</figcaption>
-</figure>
-    <h3>Qu'est ce que le SQL ?</h3>
-    <p>Le SQL est le language infomatique que votre ordinateur envoie en requête sous forme de paquet au serveur. Une fois que le serveur a trouvé ce que vous recherchez, alors à ce moment là le serveur va vous 
-        renvoyer une requête en SQL qui sera automatiquement traduite par votre ordinateur.</p>
-    <h3>Vous acceptez tous le temps les cookies, mais savez-vous réellement ce que c'est ?</h3>
-    <p>Les cookies sont de petit fichiers texte enregistrés sur votre appareil, et qui va servir a votre appareil à vous faire des publicités plus ciblées. Comme si vous allez sur le site d'apple et que vous 
-        allez sur youtube alors youtube vous mettra plus facilement des pubs pour l'appareil apple. Un exemple dans les 2 documents ci dessous.</p>
-    <img src="https://qph.cf2.quoracdn.net/main-qimg-dcda5862501cfb2adc305925232bb864" width="200">
-    <img src="https://mickael-maury.fr/wp-content/uploads/2017/01/Cookies-2.png" width="200">
-    <h3>Le RGPD, qu'est-ce que c'est ?</h3>
-    <p>Le RGPD c'est Le règlement général de protection des données (RGPD) c'est donc un texte réglementaire européen qui encadre le traitement des données de manière égalitaire sur tout le territoire de l'Union européenne (UE).</p>
-    <img src="https://www.apst.travel/wp-content/uploads/2018/05/rgpd_4_etapes.jpg" width="300"><br>
-    <h1 id="subtitle-2">Merci d'avoir lu cet article. J'espère vous avoir appris des choses !</h1>
-    <h2>Site internet de l'equipe D (Elouan, <a hrf="https://fourmigrand.github.io/Mon-premier-site"> Mathieu </a>,<a hrf="https://ericecmorlaix.github.io/SNT-2GT5_2023-2024/Web/#le-bilan-du-theme"> Camille </a>, <a hrf="https://aaronnr0407.github.io/SNT/">Aaron </a>,<a hrf="https://ericecmorlaix.github.io/SNT-2GT5_2023-2024/Web/#le-bilan-du-theme">Enzo </a>)</h2>
-</body>
+<html lang="fr-FR" data-website-id="1" data-main-object="website.page(4,)">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="generator" content="Odoo"/>
+            
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Home | MyLife"/>
+        <meta property="og:site_name" content="MyLife"/>
+        <meta property="og:url" content="https://myliferp.odoo.com/"/>
+        <meta property="og:image" content="https://myliferp.odoo.com/web/image/website/1/logo?unique=1ecb145"/>
+            
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:title" content="Home | MyLife"/>
+        <meta name="twitter:image" content="https://myliferp.odoo.com/web/image/website/1/logo/300x300?unique=1ecb145"/>
+        
+        <link rel="canonical" href="https://myliferp.odoo.com/"/>
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""/>
+        <title> Home | MyLife </title>
+        <link type="image/x-icon" rel="shortcut icon" href="/web/image/website/1/favicon?unique=1ecb145"/>
+        <link rel="preload" href="/web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" crossorigin=""/>
+        <link type="text/css" rel="stylesheet" href="/web/assets/1/c215cf9/web.assets_frontend.min.css"/>
+        <script id="web.layout.odooscript" type="text/javascript">
+            var odoo = {
+                csrf_token: "3077144dd9a5e97b6323114c2f907fffab08fd9fo1765476517",
+                debug: "",
+            };
+        </script>
+        <script type="text/javascript">
+            odoo.__session_info__ = {"is_admin": false, "is_system": false, "is_public": true, "is_website_user": true, "user_id": false, "is_frontend": true, "profile_session": null, "profile_collectors": null, "profile_params": null, "show_effect": true, "currencies": {"124": {"symbol": "\u20ac", "position": "after", "digits": [69, 2]}}, "bundle_params": {"lang": "fr_FR", "website_id": 1}, "websocket_worker_version": "17.0-1", "translationURL": "/website/translations", "cache_hashes": {"translations": "5866dd8b3cdaf3ff12481abf4701c95004066634"}, "geoip_country_code": "FR", "geoip_phone_code": 33, "lang_url_code": "fr"};
+            if (!/(^|;\s)tz=/.test(document.cookie)) {
+                const userTZ = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                document.cookie = `tz=${userTZ}; path=/`;
+            }
+        </script>
+        <script type="text/javascript" defer="defer" src="/web/assets/1/5cb6680/web.assets_frontend_minimal.min.js" onerror="__odooAssetError=1"></script>
+        <script type="text/javascript" defer="defer" data-src="/web/assets/1/fdcc381/web.assets_frontend_lazy.min.js" onerror="__odooAssetError=1"></script>
+        
+        
+    </head>
+    <body>
+
+
+
+        <div id="wrapwrap" class="homepage   ">
+                <header id="top" data-anchor="true" data-name="Header" data-extra-items-toggle-aria-label="Extra items button" class="   o_header_fade_out" style=" ">
+                    
+    <nav data-name="Navbar" aria-label="Main" class="navbar navbar-expand-lg navbar-light o_colored_level o_cc d-none d-lg-block pt-3 shadow-sm ">
+        
+
+            <div id="o_main_nav" class="o_main_nav container flex-wrap">
+                <div class="o_header_hide_on_scroll d-grid align-items-center w-100 o_grid_header_3_cols pb-3">
+                    <ul class="navbar-nav align-items-center gap-1">
+                        
+        <li class="">
+                <div class="modal fade" id="o_search_modal" aria-hidden="true" tabindex="-1">
+                    <div class="modal-dialog modal-lg pt-5">
+                        <div class="modal-content mt-5">
+    <form method="get" class="o_searchbar_form o_wait_lazy_js s_searchbar_input " action="/website/search" data-snippet="s_searchbar_input">
+            <div role="search" class="input-group input-group-lg">
+        <input type="search" name="search" class="search-query form-control oe_search_box border-0 bg-light border border-end-0 p-3" placeholder="Rechercher…" data-search-type="all" data-limit="5" data-display-image="true" data-display-description="true" data-display-extra-link="true" data-display-detail="true" data-order-by="name asc"/>
+        <button type="submit" aria-label="Rechercher" title="Rechercher" class="btn oe_search_button border border-start-0 px-4 bg-o-color-4">
+            <i class="oi oi-search"></i>
+        </button>
+    </div>
+
+            <input name="order" type="hidden" class="o_search_order_by" value="name asc"/>
+            
+    
+        </form>
+                        </div>
+                    </div>
+                </div>
+                <a data-bs-target="#o_search_modal" data-bs-toggle="modal" role="button" title="Rechercher" href="#" class="btn rounded-circle p-1 lh-1 o_navlink_background text-reset o_not_editable">
+                    <i class="oi oi-search fa-stack lh-lg"></i>
+                </a>
+        </li>
+                        
+                        
+        <li class="">
+                <div data-name="Text" class="s_text_block ">
+                    <a class="nav-link o_nav-link_secondary p-2" data-bs-original-title="" title="">&nbsp;<br/></a>
+                </div>
+        </li>
+                    </ul>
+                    
+    <a data-name="Navbar Logo" href="/" class="navbar-brand logo mx-auto mw-100">
+            
+            <span role="img" aria-label="Logo of MyLife" title="MyLife"><img src="/web/image/website/1/logo/MyLife?unique=1ecb145" class="img img-fluid" width="95" height="40" alt="MyLife" loading="lazy"/></span>
+        </a>
+    
+                    <ul class="navbar-nav align-items-center gap-1 flex-wrap justify-content-end ms-auto">
+                        
+                        
+        
+        
+                        
+                        
+                    </ul>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                    
+    <ul id="top_menu" role="menu" class="nav navbar-nav top_menu o_menu_loading pb-0">
+        
+
+                        
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="/" class="nav-link active">
+            <span>Présentation</span>
+        </a>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="/lexique-de-base" class="nav-link ">
+            <span>Règlement</span>
+        </a>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="/reglement-illegal" class="nav-link ">
+            <span>Règlement illégal</span>
+        </a>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="/information-serveur" class="nav-link ">
+            <span>Information serveur</span>
+        </a>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="/photo-du-serveur" class="nav-link ">
+            <span>Screenshoot du serveur</span>
+        </a>
+    </li>
+                    
+    </ul>
+                </div>
+            </div>
+        
+    </nav>
+    <nav data-name="Navbar" aria-label="Mobile" class="navbar  navbar-light o_colored_level o_cc o_header_mobile d-block d-lg-none shadow-sm ">
+        
+
+        <div class="o_main_nav container flex-wrap justify-content-between">
+            
+    <a data-name="Navbar Logo" href="/" class="navbar-brand logo ">
+            
+            <span role="img" aria-label="Logo of MyLife" title="MyLife"><img src="/web/image/website/1/logo/MyLife?unique=1ecb145" class="img img-fluid" width="95" height="40" alt="MyLife" loading="lazy"/></span>
+        </a>
+    
+            <ul class="o_header_mobile_buttons_wrap navbar-nav flex-row align-items-center gap-2 mb-0">
+                <li>
+                    <button class="nav-link btn me-auto p-2 o_not_editable" type="button" data-bs-toggle="offcanvas" data-bs-target="#top_menu_collapse_mobile" aria-controls="top_menu_collapse_mobile" aria-expanded="false" aria-label="Basculer la navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </li>
+            </ul>
+            <div id="top_menu_collapse_mobile" class="offcanvas offcanvas-end o_navbar_mobile">
+                <div class="offcanvas-header justify-content-end o_not_editable">
+                    <button type="button" class="nav-link btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+                </div>
+                <div class="offcanvas-body d-flex flex-column justify-content-between h-100 w-100">
+                    <ul class="navbar-nav">
+                        
+        <li class="">
+    <form method="get" class="o_searchbar_form o_wait_lazy_js s_searchbar_input " action="/website/search" data-snippet="s_searchbar_input">
+            <div role="search" class="input-group mb-3">
+        <input type="search" name="search" class="search-query form-control oe_search_box border-0 bg-light rounded-start-pill text-bg-light ps-3" placeholder="Rechercher…" data-search-type="all" data-limit="0" data-display-image="true" data-display-description="true" data-display-extra-link="true" data-display-detail="true" data-order-by="name asc"/>
+        <button type="submit" aria-label="Rechercher" title="Rechercher" class="btn oe_search_button rounded-end-pill bg-o-color-3 pe-3">
+            <i class="oi oi-search"></i>
+        </button>
+    </div>
+
+            <input name="order" type="hidden" class="o_search_order_by" value="name asc"/>
+            
+    
+        </form>
+        </li>
+                        
+    <ul role="menu" class="nav navbar-nav top_menu  ">
+        
+
+                            
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="/" class="nav-link active">
+            <span>Présentation</span>
+        </a>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="/lexique-de-base" class="nav-link ">
+            <span>Règlement</span>
+        </a>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="/reglement-illegal" class="nav-link ">
+            <span>Règlement illégal</span>
+        </a>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="/information-serveur" class="nav-link ">
+            <span>Information serveur</span>
+        </a>
+    </li>
+    <li role="presentation" class="nav-item">
+        <a role="menuitem" href="/photo-du-serveur" class="nav-link ">
+            <span>Screenshoot du serveur</span>
+        </a>
+    </li>
+                        
+    </ul>
+                        
+        <li class="">
+                <div data-name="Text" class="s_text_block mt-2 border-top pt-2 o_border_contrast">
+                    <a class="nav-link o_nav-link_secondary p-2" data-bs-original-title="" title="">&nbsp;<br/></a>
+                </div>
+        </li>
+                        
+                    </ul>
+                    <ul class="navbar-nav gap-2 mt-3 w-100">
+                        
+                        
+        
+        
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+    </nav>
+    
+        </header>
+                <main>
+                    
+        <div id="wrap" class="oe_structure oe_empty"><section class="s_text_image o_colored_level o_cc o_cc5 pb16 pt0" data-oe-shape-data="{&#34;shape&#34;:&#34;web_editor/Origins/18&#34;,&#34;flip&#34;:[],&#34;animated&#34;:&#34;true&#34;}" data-snippet="s_text_image" data-name="Texte - Image" style="position: relative; background-image: linear-gradient(135deg, rgb(203, 94, 238) 0%, rgb(75, 225, 236) 100%);"><div class="o_we_shape o_web_editor_Origins_18 o_we_animated"></div>
+        
+        <div class="container">
+            <div class="row o_grid_mode" data-row-count="18">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+                
+                <div class="o_colored_level o_animate o_anim_zoom_in o_visible o_grid_item g-height-18 g-col-lg-7 col-lg-7" style="grid-area: 1 / 1 / 19 / 8; z-index: 1;">
+                    <h2 style="background-color: rgba(0, 0, 0, 0); text-align: center;">
+        
+    <strong>Bienvenue sur&nbsp;MyLife</strong></h2>
+                    <p style="background-color: rgba(0, 0, 0, 0);">
+        <br/>
+    </p>
+                    <p style="background-color: rgba(0, 0, 0, 0);">
+        Tout est parti d'une simple blague entre joueurs ou, après plusieurs essais sur divers serveurs RP, rien ne nous convenait.</p><blockquote style="background-color: rgba(0, 0, 0, 0);">"On ne trouve rien, alors pourquoi pas créer quelque chose qui nous ressemble ?"</blockquote><p style="background-color: rgba(0, 0, 0, 0);"> C'est une phrase qui a été prononcé fin juin&nbsp;2023 et qui nous amène à cette situation assez folle d'avoir notre propre communauté.</p><p style="background-color: rgba(0, 0, 0, 0);">Si seulement on avait sue que 2 mois après on y serait ...&nbsp;</p><p style="background-color: rgba(0, 0, 0, 0);">Nous aspirons à créer et à faire évoluer ce serveur en tant que passionné de RP pour des passionnés de RP . Pour que tout le monde ce trouve une grande place dans ce monde virtuel .</p><h2 style="text-align: center;"><strong>Le Lore de&nbsp;MyLife</strong>
+        </h2><p style="background-color: rgba(0, 0, 0, 0);"><br/></p>
+                    <p style="background-color: rgba(0, 0, 0, 0);">
+Dans les rues de Los Santos, règne La Fuente Blanca, un cartel impitoyable.&nbsp;</p><p style="background-color: rgba(0, 0, 0, 0);">Issu des jungles d'Amérique latine, il étend son influence à travers la ville, contrôlant le trafic de drogue, d'arme, d'extorsion, de blanchiment d'argent et j'en passe.&nbsp;</p><p style="background-color: rgba(0, 0, 0, 0);">Dirigé par Sebastian Gomez, le cartel prospère grâce à sa violence, sa ruse et ses infiltrations.&nbsp;</p><p style="background-color: rgba(0, 0, 0, 0);">Pour les habitants, La Fuente Blanca est à la fois une force redoutée et une réalité incontournable, où la loyauté est une question de survie.</p><p style="background-color: rgba(0, 0, 0, 0);">A ce jour, le seul espoir de ce libérer de cette emprise est une organisation nommé la "4ML", qui, malgré le faite quelle appartienne à la criminalité, est respecter de tous.</p><p style="background-color: rgba(0, 0, 0, 0);">A voir ce que l'avenir nous et vous réserve ..</p><p style="background-color: rgba(0, 0, 0, 0);"><br/></p></div>
+            <div class="o_colored_level o_grid_item g-height-18 g-col-lg-5 col-lg-5" style="text-align: center; z-index: 2; grid-area: 1 / 8 / 19 / 13;">
+                    <figure class="figure">
+                        <img src="/web/image/509-df4358cb/4ML%201.jpg" alt="" class="figure-img padding-large img img-fluid o_we_custom_image" style="width: 100%;" data-original-id="273" data-original-src="/web/image/273-55f84233/4ML%201.jpg" data-mimetype="image/jpeg" data-resize-width="690" data-bs-original-title="" title="" aria-describedby="tooltip236842" loading="lazy"/>
+                        <figcaption class="figure-caption text-muted py-3 o_default_snippet_text"><br/></figcaption>
+                    </figure>
+                </div></div>
+        </div>
+    </section><section class="s_numbers o_colored_level pt0 pb0 o_cc o_cc5 bg-800" data-oe-shape-data="{&#34;shape&#34;:&#34;web_editor/Blobs/06&#34;,&#34;colors&#34;:{&#34;c1&#34;:&#34;rgba(99, 74, 165, 0)&#34;},&#34;flip&#34;:[]}" data-snippet="s_numbers" data-name="Nombres" style="position: relative; background-image: none;"><div class="o_we_shape o_web_editor_Blobs_06" style="background-image: url(&#34;/web_editor/shape/web_editor%2FBlobs%2F06.svg?c1=rgba(99%2C%2074%2C%20165%2C%200)&#34;); background-color: rgba(99, 74, 165, 0);"></div>
+        
+        <div class="container-fluid">
+            <div class="row o_grid_mode" data-row-count="2">
+    
+
+    
+
+                <div class="text-center o_colored_level o_grid_item g-col-lg-3 g-height-2 col-lg-3" style="grid-area: 1 / 1 / 3 / 4; z-index: 1;"><span class="s_number display-4">7+</span><h6>Gangs/Orga Disponibles</h6>
+                </div>
+                <div class="text-center o_colored_level o_grid_item g-col-lg-3 g-height-2 col-lg-3" style="grid-area: 1 / 4 / 3 / 7; z-index: 2;"><span class="s_number display-4">128</span><h6>Slot</h6>
+                </div>
+                <div class="text-center o_colored_level o_grid_item g-col-lg-3 g-height-2 col-lg-3" style="grid-area: 1 / 7 / 3 / 10; z-index: 3;"><span class="s_number display-4">10</span><h6>Staff</h6>
+                </div>
+                <div class="text-center o_colored_level o_grid_item g-col-lg-3 g-height-2 col-lg-3" style="grid-area: 1 / 10 / 3 / 13; z-index: 4;"><span class="s_number display-4">+11</span><h6>Métiers Disponibles</h6>
+                </div>
+            </div>
+        </div>
+    </section><section class="s_three_columns o_colored_level o_cc o_cc5 pb32 pt32" data-vcss="001" data-snippet="s_three_columns" data-name="Colonnes" style="position: relative; background-image: linear-gradient(135deg, rgb(203, 94, 238) 0%, rgb(75, 225, 236) 100%);" data-oe-shape-data="{&#34;shape&#34;:&#34;web_editor/Origins/16&#34;,&#34;colors&#34;:{&#34;c3&#34;:&#34;rgba(255, 255, 255, 0.25)&#34;},&#34;flip&#34;:[],&#34;animated&#34;:&#34;true&#34;}"><div class="o_we_shape o_web_editor_Origins_16 o_we_animated" style="background-image: url(&#34;/web_editor/shape/web_editor%2FOrigins%2F16.svg?c3=rgba(255%2C%20255%2C%20255%2C%200.25)&#34;);"></div>
+        <div class="container">
+            <div class="row d-flex o_grid_mode" data-row-count="10">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+                
+                <div class="s_col_no_bgcolor o_grid_item g-col-lg-3 g-height-7 col-lg-3" style="background-color: rgba(0, 0, 0, 0); grid-area: 1 / 4 / 8 / 7; z-index: 2;">
+                    <div class="card text-bg-white h-100 shadow" style="border-width: 0px !important; box-shadow: rgb(0, 0, 0) 0px 8px 16px 0px !important;">
+                        <img src="/web/image/499-9ba06c81/ballas.png" alt="" class="card-img-top img img-fluid o_we_custom_image o_anim_fade_in o_animate o_visible" style="animation-duration: 2s;" data-original-id="367" data-original-src="/web/image/367-ef471291/ballas.png" data-mimetype="image/png" data-resize-width="690" loading="lazy" data-bs-original-title="" title="" aria-describedby="tooltip938468"/>
+                        <div class="card-body">
+                            <h3 class="card-title" style="text-align: center;"><strong><u>MAPPING</u></strong></h3>
+                            <p class="card-text" style="text-align: center;">
+<span style="color: rgb(100, 103, 110); font-style: normal; background-color: rgb(255, 255, 255);"><strong>Vous en avez marre de jouer dans les mêmes bâtiments sur tous les serveurs ?&nbsp;Pas de soucis, on a ce qu'il vous faut !</strong></span>
+
+<br/></p></div>
+                    </div>
+                </div>
+                <div class="s_col_no_bgcolor o_grid_item g-col-lg-3 g-height-7 col-lg-3" style="background-color: rgba(0, 0, 0, 0); grid-area: 1 / 7 / 8 / 10; z-index: 3;">
+                    <div class="card text-bg-white h-100 shadow" style="border-width: 0px !important; box-shadow: rgb(0, 0, 0) 0px 8px 16px 0px !important;">
+                        <img src="https://myliferp.odoo.com/web/image/359-84ca7d3c/bcso.png" alt="" class="card-img-top img img-fluid o_we_custom_image o_anim_fade_in o_animate o_visible" data-original-id="355" data-original-src="/web/image/355-2fea7e70/bcso.png" data-mimetype="image/png" data-resize-width="690" data-bs-original-title="" title="" aria-describedby="tooltip14341" loading="eager" style=""/>
+                        <div class="card-body">
+                            <h3 class="card-title" style="text-align: center;"><strong><u>ECONOMIE</u></strong></h3>
+                            <p class="card-text" style="text-align: center;">
+<span style="color: rgb(100, 103, 110); font-style: normal; background-color: rgb(255, 255, 255);"><strong>Une économie réaliste et&nbsp;régulée&nbsp;est en place sur le serveur, ici pas d'eau à&nbsp;60 $&nbsp;et de&nbsp;blista&nbsp;à&nbsp;18 000&nbsp;!&nbsp;</strong></span>
+
+<br/></p></div>
+                    </div>
+                </div>
+            <div class="s_col_no_bgcolor o_grid_item g-col-lg-3 g-height-9 col-lg-3" style="background-color: rgba(0, 0, 0, 0); z-index: 1; grid-area: 2 / 1 / 11 / 4;">
+                    <div class="card text-bg-white h-100 shadow" style="border-width: 0px !important; box-shadow: rgb(0, 0, 0) 0px 8px 16px 0px !important;">
+                        <img src="/web/image/500-becaab2b/u" alt="" class="card-img-top img img-fluid o_we_custom_image o_animate o_animate_both_scroll o_anim_fade_in o_visible" style="animation-duration: 2s; --wanim-intensity: 25;" data-original-id="488" data-original-src="/web/image/488-aa8003a2/u" data-mimetype="image/png" data-resize-width="690" loading="lazy"/>
+                        <div class="card-body">
+                            <h3 class="card-title" style="text-align: center;"><strong><u>EVENEMENT</u></strong>&nbsp;</h3><p style="text-align: center;"><font class="text-o-color-2 bg-white" style="font-weight: bold;">
+<span style="color: rgb(100, 103, 110); font-style: normal; background-color: rgb(255, 255, 255);">Des&nbsp;événements seront organisés pour réunir la communauté afin de créer&nbsp;des moments conviviaux&nbsp;tous ensemble.&nbsp;</span></font></p><p style="text-align: center;"><font class="text-o-color-2 bg-white" style="font-weight: bold;"><span style="color: rgb(100, 103, 110); font-style: normal; background-color: rgb(255, 255, 255);">Rien n'empêche d'en créer un vous-même, au contraire !&nbsp;</span>
+
+</font><br/></p><p style="text-align: center;"><span style="color: rgb(100, 103, 110); font-style: normal; font-weight: 400; background-color: rgb(255, 255, 255);"><span style="color: rgb(100, 103, 110); font-style: normal; font-weight: 400; background-color: rgb(255, 255, 255); font-size: 14px;"><br/>
+
+</span></span><span style="color: rgb(100, 103, 110); font-style: normal; font-weight: 400; background-color: rgb(255, 255, 255); font-size: 14px;">
+
+</span><br/></p></div></div></div><div class="s_col_no_bgcolor o_grid_item g-col-lg-3 g-height-9 col-lg-3" style="z-index: 4; grid-area: 2 / 10 / 11 / 13;"><div class="card text-bg-white h-100 shadow" style="border-width: 0px !important; box-shadow: rgb(0, 0, 0) 0px 8px 16px 0px !important;"><span style="--wanim-intensity: 25;"><img src="/web/image/363-7894b0bf/gouvernement.png" alt="" class="card-img-top img img-fluid o_we_custom_image o_animate o_animate_both_scroll o_anim_fade_in o_visible" style="animation-duration: 2s; --wanim-intensity: 25;" data-original-id="356" data-original-src="/web/image/356-80284927/gouvernement.png" data-mimetype="image/png" data-resize-width="690" data-bs-original-title="" title="" aria-describedby="tooltip144214" loading="eager"/></span>
+                        <div class="card-body">
+                            <h3 style="text-align: center;"><strong><u>ENTREPRISE</u></strong><br/></h3><p style="text-align: center;">
+<span style="color: rgb(100, 103, 110); font-style: normal; background-color: rgb(255, 255, 255);"><strong>Vous souhaitez une entreprise/organisation qui n'existe pas sur notre serveur ?&nbsp;</strong></span></p><p style="text-align: center;"><span style="color: rgb(100, 103, 110); font-style: normal; background-color: rgb(255, 255, 255);"><strong>Pas de soucis, venez nous en parler dans un ticket nous allons en discuter pour voir ce que nous pouvons vous proposer&nbsp;</strong></span>
+
+<br/></p></div></div></div></div>
+        </div>
+    </section><section class="s_color_blocks_2 o_colored_level" data-snippet="s_color_blocks_2" data-name="Grandes boîtes" style="background-image: none;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 text-center o_colored_level o_cc o_cc4 pb112 pt64" data-oe-shape-data="{&#34;shape&#34;:&#34;web_editor/Wavy/24&#34;,&#34;colors&#34;:{&#34;c1&#34;:&#34;#000000&#34;,&#34;c2&#34;:&#34;#000000&#34;},&#34;flip&#34;:[&#34;x&#34;],&#34;animated&#34;:&#34;true&#34;}" style="position: relative; background-color: rgba(0, 0, 0, 0); background-image: linear-gradient(135deg, rgb(203, 94, 238) 0%, rgb(75, 225, 236) 100%);"><div class="o_we_shape o_web_editor_Wavy_24 o_we_animated" style="background-image: url(&#34;/web_editor/shape/web_editor%2FWavy%2F24.svg?c1=%23000000&amp;c2=%23000000&amp;flip=x&#34;); background-position: 50% 50%;"></div>
+        
+                    <i class="fa fa-microphone fa-5x m-3" data-bs-original-title="" title="" aria-describedby="tooltip133374"></i><p><span style="font-size: 24px;">Vous souhaitez rejoindre l'aventure ?</span><br/></p><span style="font-size: 24px;">
+                    </span><a href="https://discord.gg/myliferoleplay" class="btn btn-secondary" data-bs-original-title="" title="" target="_blank">Cliquez ici !</a>
+                </div>
+                <div class="col-lg-6 text-center o_colored_level pb4 pt40 o_cc o_cc4" data-oe-shape-data="{&#34;shape&#34;:&#34;web_editor/Wavy/24&#34;,&#34;colors&#34;:{&#34;c1&#34;:&#34;#000000&#34;,&#34;c2&#34;:&#34;#000000&#34;},&#34;flip&#34;:[],&#34;animated&#34;:&#34;true&#34;}" style="position: relative; background-color: rgba(0, 0, 0, 0); background-image: radial-gradient(circle farthest-side at 25% 25%, rgb(75, 225, 236) 0%, rgb(203, 94, 238) 100%);"><div class="o_we_shape o_web_editor_Wavy_24 o_we_animated" style="background-image: url(&#34;/web_editor/shape/web_editor%2FWavy%2F24.svg?c1=%23000000&amp;c2=%23000000&#34;);"></div>
+        
+                    <i class="fa fa-heart fa-5x m-3" data-bs-original-title="" title="" aria-describedby="tooltip550066"></i><span style="font-size: 24px;">&nbsp;<br/>Vous souhaitez nous soutenir ?&nbsp;<br/>Pas de&nbsp;problème,&nbsp;tu peux voter sur Top Serveur&nbsp;<br/><br/>​​</span><a href="https://top-serveurs.net/gta/myliferp-wl-fr-18-beta" class="btn btn-secondary" data-bs-original-title="" title="" target="_blank"><span style="font-size: 24px;">Cliquez ici !</span></a></div>
+            </div>
+        </div>
+    </section></div>
+    
+        <div id="o_shared_blocks" class="oe_unremovable"><div class="modal fade" id="o_search_modal" aria-hidden="true" tabindex="-1">
+                    <div class="modal-dialog modal-lg pt-5">
+                        <div class="modal-content mt-5">
+    <form method="get" class="o_searchbar_form o_wait_lazy_js s_searchbar_input" action="/website/search" data-snippet="s_searchbar_input">
+            <div role="search" class="input-group input-group-lg">
+        <input type="search" name="search" data-oe-model="ir.ui.view" data-oe-id="606" data-oe-field="arch" data-oe-xpath="/data/xpath[3]/form/t[1]/div[1]/input[1]" class="search-query form-control oe_search_box border-0 bg-light border border-end-0 p-3" placeholder="Rechercher…" data-search-type="all" data-limit="5" data-display-image="true" data-display-description="true" data-display-extra-link="true" data-display-detail="true" data-order-by="name asc" autocomplete="off"/>
+        <button type="submit" aria-label="Rechercher" title="Rechercher" class="btn oe_search_button border border-start-0 px-4 bg-o-color-4">
+            <i class="oi oi-search o_editable_media" data-oe-model="ir.ui.view" data-oe-id="606" data-oe-field="arch" data-oe-xpath="/data/xpath[3]/form/t[1]/div[1]/button[1]/i[1]"></i>
+        </button>
+    </div>
+
+            <input name="order" type="hidden" class="o_search_order_by" data-oe-model="ir.ui.view" data-oe-id="606" data-oe-field="arch" data-oe-xpath="/data/xpath[3]/form/input[1]" value="name asc"/>
+            
+    
+        </form>
+                        </div>
+                    </div>
+                </div></div>
+                </main>
+                <footer id="bottom" data-anchor="true" data-name="Footer" class="o_footer o_colored_level o_cc ">
+                    <div id="footer" class="oe_structure oe_structure_solo" style="">
+            <section class="s_text_block pt0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+                <div class="s_allow_columns container"><blockquote style="text-align: left;">&nbsp;Copyright&nbsp;MyLife © 2023 &nbsp;</blockquote></div>
+            </section>
+            
+        </div>
+    <div class="o_footer_copyright o_colored_level o_cc" data-name="Copyright">
+                        <div class="container py-3">
+                            <div class="row">
+                                <div class="col-sm text-center text-sm-start text-muted">
+                                    <span class="o_footer_copyright_name me-2">​</span>
+        
+        
+                                </div>
+                                <div class="col-sm text-center text-sm-end o_not_editable">
+        <div class="o_brand_promotion">
+        Généré par 
+            <a target="_blank" class="badge text-bg-light" href="http://www.odoo.com?utm_source=db&amp;utm_medium=website">
+                <img alt="Odoo" src="/web/static/img/odoo_logo_tiny.png" width="62" height="20" style="width: auto; height: 1em; vertical-align: baseline;" loading="lazy"/>
+            </a>
+        - 
+                Créer un <a target="_blank" href="http://www.odoo.com/app/website?utm_source=db&amp;utm_medium=website">site web gratuit</a>
+            
+    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        
+        </body>
 </html>
